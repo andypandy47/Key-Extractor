@@ -2,12 +2,6 @@ const base64 = require("js-base64");
 const sha256 = require("sha256");
 const x509 = require("js-x509-utils");
 const jwkToPem = require("jwk-to-pem");
-const readline = require("readline");
-
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
 
 const certPrefix = "-----BEGIN CERTIFICATE-----\n";
 const certPostfix = "-----END CERTIFICATE-----";
